@@ -3,7 +3,7 @@ import os
 
 def setup_database():
     # This puts the database file inside the 'data' folder
-    db_path = os.path.join('..', 'data', 'fraud_guard.db')
+    db_path = os.path.join('data', 'fraud_guard.db')
     connection = sqlite3.connect(db_path)
     cursor = connection.cursor()
 
